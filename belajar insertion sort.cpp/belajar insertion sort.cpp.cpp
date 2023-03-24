@@ -1,5 +1,5 @@
 #include <iostream>
-using namespace
+using namespace std;
 
 int arr[20];  //Membuat Array dengan panjang data 20
 int n;		  //Membuat Variabel inputan n
@@ -7,7 +7,7 @@ int n;		  //Membuat Variabel inputan n
 void input() {	//Procedure input
 	while (true)
 	{
-		cout << "Masukan Jumlah Data pada Array : "	//Membuat input jumlah elemen Array
+		cout << "Masukan Jumlah Data pada Array : "; //Membuat input jumlah elemen Array
 			cin >> n;								//memanggil variabel input n
 
 		if (n <= 20) {				//membuat kondisi n tidak lebih dari 20
@@ -31,12 +31,12 @@ void input() {	//Procedure input
 	}
 }
 
-void itnsertionsor() {		//procedure itnsertionsor
+void insertionsort() {		//procedure itnsertionsor
 
 	int temp;			//membuat variabel data temporer atau penyimpanan sementara
 	int j;				//membuat variabel j sebagai penanda
 
-	for (int i = 1; i < n; i++)		//1. looping dengan i dimulai dari 1 hingga n-1
+	for (int i = 1; i < n; i++)	{	//1. looping dengan i dimulai dari 1 hingga n-1
 
 		temp = arr[i];				//2. simpan nilai arr[i] ke variabel sementara temp
 
@@ -52,9 +52,9 @@ void itnsertionsor() {		//procedure itnsertionsor
 	arr[j + 1] = temp;		//5. simpan nilai temp ke dalam arr[j+1
 
 	
-	cout << "\nPass " << i << "; ";		//Output ke layar 
+	cout << "\nPass " << i << ": ";		//Output ke layar 
 	for (int k = 0; k < n; k++) {		//looping nilai k dimulai dari 0 hingga n-1
-		cout << arr[k] << "";			//Output ke layar
+		cout << arr[k] << " ";			//Output ke layar
 	}
 }
 }
