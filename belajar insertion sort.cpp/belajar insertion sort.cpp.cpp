@@ -60,7 +60,7 @@ void insertionsort() {		//procedure itnsertionsor
 }
 
 
-void display() {		//procedure disply
+void display() {		//procedure disply 
 	cout << endl;											//Output baris kosong
 	cout << "\n============================" << endl;		//Output ke layer
 	cout << "Element Array yang telah tersusun" << endl;	//output ke layer
